@@ -12,6 +12,11 @@ SELECT MIN(birth_date) FROM employee;
 SELECT * FROM employee
 WHERE reports_to = 2;
 
+-- SELECT * FROM employee
+-- WHERE reports_to IN 
+-- 	(SELECT employee_id FROM employee
+--    WHERE first_name = 'Nancy' AND last_name = 'Edwards');
+
 -- 5. Count how many people live in Lethbridge.
 SELECT COUNT(*) FROM employee
 WHERE city = 'Lethbridge';
